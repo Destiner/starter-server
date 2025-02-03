@@ -1,5 +1,22 @@
 {
   "name": "starter-server",
+  "version": "1.0.0",
+  "description": "Starter Hono server",
+  "author": {
+    "name": "Timur Badretdinov",
+    "url": "https://github.com/Destiner"
+  },
+  "keywords": [
+    "hono",
+    "backend",
+    "starter"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Destiner/starter-server.git"
+  },
+  "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
     "dev": "bun run --hot src/index.ts",
