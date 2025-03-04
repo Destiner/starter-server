@@ -23,7 +23,9 @@
     "moduleResolution": "Bundler",
     "module": "preserve",
     "noEmit": true,
-    /* Browser-specific */
+    /* Erasable syntax */
+    "erasableSyntaxOnly": true,
+    /* Runtime-specific */
     "lib": ["ES2022"],
     /* Imports */
     "baseUrl": "src",
