@@ -23,19 +23,25 @@
     "lint": "bun run lint:prettier && bun run lint:eslint",
     "lint:prettier": "prettier -c \"src/**/*.{json,js,ts}\"",
     "lint:eslint": "eslint \"src/**/*.{js,ts}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "bun node_modules/@typescript/native/bin/tsc --noEmit"
   },
   "dependencies": {
-    "hono": "^4.13.3"
+    "hono": "^4.13.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/bun": "^1.4.0",
-    "eslint": "^10.9.0",
+    "@types/bun": "^1.4.1",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "^10.10.0",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import-x": "^4.17.1",
     "prettier": "^3.9.6",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.67.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.69.0"
+  },
+  "overrides": {
+    "@humanfs/node": "^0.16.8",
+    "brace-expansion": "^5.0.9",
+    "picomatch": "^4.0.7"
   }
 }
